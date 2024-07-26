@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class d_AllPrimeNosBWTwoNos {
     public static void main(String[] args) {
-        System.out.println(frLoop(1,100).reversed());
+        System.out.println(frLoop(0,10).reversed());
     }
 
     static ArrayList<Integer> frLoop(int start, int end){
