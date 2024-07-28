@@ -1,28 +1,23 @@
 package com.dsa_bootcamp_assignments.e_arrays;
+//https://leetcode.com/problems/check-if-the-sentence-is-pangram/
+
 
 public class j_Pangram {
 
     public static void main(String[] args) {
         String sentence = "thequickbrownfoxjumpsoverthelazydog";
-        char[] aToz = new char[26];
-        int counter = 0;
-        char i;
-        for (i = 'a'; i <= 'z' ; i++) {
-            aToz[counter] = i;
-            counter++;
-        }
-        System.out.println(aToz);
+        String abc = "abcdefghijklmnopqrstuvwxyz";
 
-        int counter2 = 0;
-        for (char element: sentence.toCharArray() ){
-            for (char alpha: aToz){
-                if (alpha == element){
-                    counter2++;
-                }
+        boolean tOrf = false;
+        for (int i = 0; i < abc.length(); i++) {
+            if (sentence.contains(Character.toString(abc.charAt(i)))) {
+                tOrf = true;
+            } else {
+                tOrf = false;
+                break;
             }
         }
+        System.out.println(tOrf);
 
-        System.out.println(counter2);
     }
-
 }
