@@ -1,4 +1,4 @@
-package com.dsa_bootcamp_assignments.g_searching;
+package com.dsa_bootcamp_assignments.g_searching_concepts;
 
 import java.util.Scanner;
 
