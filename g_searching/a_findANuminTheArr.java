@@ -16,11 +16,16 @@ public class a_findANuminTheArr {
 //    Otherwise return -1
 
     static int search(int[] nums, int target){
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == target){
-                return i;
+        if (nums.length == 0){
+            return -1;
+        }
+
+        for (int index = 0; index < nums.length; index++) {
+            if (nums[index] == target){
+                return index;
             }
         }
+
         return -1;
     }
 }
