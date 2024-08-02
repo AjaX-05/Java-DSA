@@ -1,9 +1,8 @@
-package com.dsa_bootcamp_assignments.e_arrays;
-
-import java.awt.*;
+package com.dsa_bootcamp_assignments.h_searching;
+//https://leetcode.com/problems/kth-missing-positive-number/description/
 import java.util.ArrayList;
 
-public class z_KthMissing {
+public class h_KthMissingPositiveNumber {
     public static void main(String[] args) {
 
         int[] arr = {1, 2, 3, 4};

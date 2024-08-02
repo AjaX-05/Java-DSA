@@ -1,9 +1,9 @@
-package com.dsa_bootcamp_assignments.e_arrays;
+package com.dsa_bootcamp_assignments.h_searching;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class z_KthMissingBetter {
+public class h_KthMissingPositiveNumber_Better {
     public static void main(String[] args) {
         int k = 5;
         int[] arr = {2, 3, 4, 7, 11};
