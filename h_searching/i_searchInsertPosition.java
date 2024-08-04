@@ -1,6 +1,6 @@
 package com.dsa_bootcamp_assignments.h_searching;
 //https://leetcode.com/problems/search-insert-position/
-public class searchInsertPosition {
+public class i_searchInsertPosition {
     public static void main(String[] args) {
         int[] nums = {1, 3, 5, 6};
         int target = 6;
