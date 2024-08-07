@@ -6,7 +6,6 @@ public class g_FindSmallestLetterGreaterThanTarget {
         char[] letters = {'e', 'e', 'e', 'e', 'e', 'e', 'e', 'n', 'n', 'n', 'n'};
         char target = 'e';
 
-
         System.out.println(findLetter(letters, target));
     }
 
