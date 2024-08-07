@@ -26,14 +26,22 @@ public class a_FirstAndLastPositionOfElementInSortedArray {
             }
 
             if (target == nums[mid]) {
+
                 while (nums[start] != nums[mid]) {
                     start++;
                 }
-                while (nums[end] != nums[mid]) {
-                    end--;
-                }
                 res[0] = start;
-                res[1] = end;
+                if (res[0] != -1){
+                    while (nums[end] != nums[mid]) {
+                        end--;
+                    }
+                    res[1] = end;
+                }
+//                while (nums[end] != nums[mid]) {
+//                    end--;
+//                }
+
+
 
                 return res;
             }
