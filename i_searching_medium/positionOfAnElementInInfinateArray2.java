@@ -6,23 +6,24 @@ public class positionOfAnElementInInfinateArray2 {
         int target = 25;
 
         int start = 0;
-        int end = target;
+        int end = 2;
         while (!elementExists(nums, target, start, end)) {
-            start = end;
-            end = target * 2;
+            int temp = start;
+            start = end + 1;
+            end = temp + (end - start + 1) * 2;
         }
 
-        int res = binarySearch(nums,target,start,end);
+        int res = binarySearch(nums, target, start, end);
         System.out.println(res);
     }
 
     static boolean elementExists(int[] nums, int target, int start, int end) {
-        for (int i = start; i < end; i++) {
-            if (nums[i] == target) {
-                return true;
-            }
+
+        if (target > nums[end]) {
+            return false;
+        } else {
+            return true;
         }
-        return false;
     }
 
     static int binarySearch(int[] nums, int target, int start, int end) {
