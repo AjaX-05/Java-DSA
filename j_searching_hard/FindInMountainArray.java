@@ -2,7 +2,7 @@ package com.dsa_bootcamp_assignments.j_searching_hard;
 
 public class FindInMountainArray {
     public static void main(String[] args) {
-        int[] nums = {0,5,3,1};
+        int[] nums = {0, 5, 3, 1};
         int target = 1;
 
         System.out.println(peakIndex(nums, target));
@@ -25,7 +25,7 @@ public class FindInMountainArray {
 //        System.out.println(start);
 //        This is the Peak Index of the Bitonic Array / Mountain Array
 
-//        Searches the first part
+//        Searches the first part (ascending)
         int tempPeakIndex = start;
         int newEnd = tempPeakIndex;
         start = 0;
@@ -43,7 +43,7 @@ public class FindInMountainArray {
         }
 
 
-//        Searches the second part
+//        Searches the second part (descending)
         start = tempPeakIndex + 1;
         end = nums.length - 1;
         while (start <= end) {
