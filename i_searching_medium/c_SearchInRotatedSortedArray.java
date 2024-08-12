@@ -2,38 +2,43 @@ package com.dsa_bootcamp_assignments.i_searching_medium;
 
 public class c_SearchInRotatedSortedArray {
     public static void main(String[] args) {
-        int[] nums = {3, 4, 5, 6, 1, 2};
-        int target = 6;
+        int[] nums = {8,9,2,3,4};
+        int target = 9;
 
         int pivot = findPivot(nums);
         System.out.println(pivot);
-        int findTarget = binarySearch(nums, target, 0, pivot);
-        if (findTarget != -1) {
-            System.out.println(findTarget);
+        if (pivot == -1) {
+            System.out.println((binarySearch(nums, target, 0, nums.length-1)));
         } else {
-            findTarget = binarySearch(nums, target, pivot + 1, nums.length - 1);
-            System.out.println(findTarget);
+            if (target == nums[pivot]) {
+                System.out.println(pivot);
+            } else if (target >= nums[0]) {
+                System.out.println(binarySearch(nums, target, 0, pivot));
+            } else {
+                System.out.println(binarySearch(nums, target, pivot + 1, nums.length-1));
+            }
         }
+
+
     }
 
     static int findPivot(int[] nums) {
         int start = 0;
         int end = nums.length - 1;
 
-        while (start < end) {
+        while (start <= end) {
             int mid = start + (end - start) / 2;
-
-            if (nums[mid] > nums[mid + 1]) {
-                end = mid;
-            } else if (nums[end] > nums[start]) {
-                start = mid + 1;
-            } else if (nums[end] < nums[mid + 1]) {
-                end--;
-            } else {
+            if (mid + 1 <= end && nums[mid] > nums[mid + 1]) {
+                return mid;
+            } else if (mid - 1 >= start && nums[mid] < nums[mid - 1]) {
+                return mid - 1;
+            } else if (nums[start] >= nums[mid]) {
                 end = mid - 1;
+            } else {
+                start = mid + 1;
             }
         }
-        return start;
+        return -1;
     }
 
     static int binarySearch(int[] arr, int target, int start, int end) {
