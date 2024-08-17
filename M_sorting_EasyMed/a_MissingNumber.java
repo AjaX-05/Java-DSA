@@ -22,12 +22,14 @@ public class a_MissingNumber {
             }
         }
 
+//        Case 1
         for (int j = 0; j < nums.length; j++) {
             if (j != nums[j]) {
                 return j;
             }
         }
 
+//        Case 2
         return nums.length;
     }
 
