@@ -1,9 +1,7 @@
 package com.dsa_bootcamp_assignments.M_sorting_EasyMed;
 
-import java.util.Arrays;
 
-
-public class a_MissingNumber {
+public class d_MissingNumber {
     public static void main(String[] args) {
         int[] nums = {1, 2};
         int res = sort(nums);
