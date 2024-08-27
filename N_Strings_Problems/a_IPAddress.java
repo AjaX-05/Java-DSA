@@ -1,4 +1,4 @@
-package com.dsa_bootcamp_assignments.N_Strings_Problems;
+package com.dsa_bootcamp_assignments.n_Strings_Problems;
 
 import java.util.Arrays;
 

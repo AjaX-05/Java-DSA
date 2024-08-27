@@ -1,6 +1,4 @@
-package com.dsa_bootcamp_assignments.M_sorting_EasyMed;
-
-import java.util.Arrays;
+package com.dsa_bootcamp_assignments.m_sorting_EasyMed;
 
 public class c_containsDuplicate {
     // TIME LIMIT EXCEEDED ERROR

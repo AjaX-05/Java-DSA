@@ -1,6 +1,6 @@
 package com.dsa_bootcamp_assignments.O_Patterns;
 
-public class O_Patterns {
+public class Main {
     public static void main(String[] args) {
         pattern8(5);
     }

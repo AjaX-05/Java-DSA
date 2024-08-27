@@ -1,20 +1,23 @@
-package com.dsa_bootcamp_assignments.M_sorting_EasyMed;
+package com.dsa_bootcamp_assignments.m_sorting_EasyMed;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class e_setMismatch {
+public class f_firstMissingPositive {
+
     public static void main(String[] args) {
-        int[] nums = {1, 1};
-        int[] mismatch = sort(nums);
-        System.out.println(Arrays.toString(mismatch));
+        int[] nums = {1};
+
+        int missing = sort(nums);
+        System.out.println(missing);
+        System.out.println(Arrays.toString(nums));
+
     }
 
-    static int[] sort(int[] nums) {
+    static int sort(int[] nums) {
         int i = 0;
         while (i < nums.length) {
             int correctIndex = nums[i] - 1;
-            if (nums[i] != nums[correctIndex]) {
+            if (nums[i] > 0 && nums[i] < nums.length && nums[i] != nums[correctIndex]) {
                 swap(nums, i, correctIndex);
             } else {
                 i++;
@@ -23,10 +26,11 @@ public class e_setMismatch {
 
         for (int j = 0; j < nums.length; j++) {
             if (nums[j] != j + 1) {
-                return new int[]{nums[j], j + 1};
+                return (j + 1);
             }
         }
-        return new int[]{-1, -1};
+
+        return nums.length + 1;
     }
 
     static void swap(int[] nums, int first, int second) {

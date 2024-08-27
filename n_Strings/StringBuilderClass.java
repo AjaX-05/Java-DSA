@@ -1,4 +1,4 @@
-package com.dsa_bootcamp_assignments.N_Strings;
+package com.dsa_bootcamp_assignments.n_Strings;
 
 public class StringBuilderClass {
     public static void main(String[] args) {

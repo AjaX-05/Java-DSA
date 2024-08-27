@@ -1,7 +1,5 @@
-package com.dsa_bootcamp_assignments.M_sorting_EasyMed;
+package com.dsa_bootcamp_assignments.m_sorting_EasyMed;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class a_MergeSortedArray {
