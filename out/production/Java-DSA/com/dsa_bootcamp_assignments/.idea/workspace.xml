@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd886049-7cf8-4c80-a06f-11dad49fcee9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/a_MergeSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/a_MergeSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/b_MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/b_MajorityElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/b_findAllNumbersDisappearedInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/b_findAllNumbersDisappearedInAnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/c_containsDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/c_containsDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/c_findTheDuplicateNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/c_findTheDuplicateNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/d_MissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/d_MissingNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/d_findAllDuplicatesInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/d_findAllDuplicatesInAnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/e_setMismatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/e_setMismatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/f_firstMissingPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/f_firstMissingPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/g_3rdMaximumNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/g_3rdMaximumNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_sorting_EasyMed/k_sortArrayByParity.java" beforeDir="false" afterPath="$PROJECT_DIR$/m_sorting_EasyMed/k_sortArrayByParity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Strings/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/n_Strings/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Strings/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/n_Strings/Operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Strings/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/n_Strings/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Strings/PerfomanceOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/n_Strings/PerfomanceOfString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Strings/PrettyPrinting.java" beforeDir="false" afterPath="$PROJECT_DIR$/n_Strings/PrettyPrinting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Strings/StringBuilderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/n_Strings/StringBuilderClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Strings_Problems/a_IPAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/N_Strings_Problems/a_IPAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/O_Patterns/O_Patterns.java" beforeDir="false" afterPath="$PROJECT_DIR$/O_Patterns/O_Patterns.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2lDbCoDiNuI1KdjDXwcy9cWHmk6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.O_Patterns.executor&quot;: &quot;Run&quot;,
+    &quot;Application.k_sortArrayByParity.executor&quot;: &quot;Run&quot;,
+    &quot;Application.l_evenDaysOfMonth.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jax/Desktop/Github/Java-DSA&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsa_bootcamp_assignments.O_Patterns.Main" />
+      <module name="Java-DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa_bootcamp_assignments.O_Patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="O_Patterns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsa_bootcamp_assignments.O_Patterns.O_Patterns" />
+      <module name="Java-DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa_bootcamp_assignments.O_Patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="k_sortArrayByParity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="MAIN_CLASS_NAME" value="com.dsa_bootcamp_assignments.m_sorting_EasyMed.k_sortArrayByParity" />
+      <module name="Java-DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa_bootcamp_assignments.m_sorting_EasyMed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="l_evenDaysOfMonth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsa_bootcamp_assignments.c_conditionals_loops.l_evenDaysOfMonth" />
+      <module name="Java-DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa_bootcamp_assignments.c_conditionals_loops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.O_Patterns" />
+      <item itemvalue="Application.k_sortArrayByParity" />
+      <item itemvalue="Application.l_evenDaysOfMonth" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.O_Patterns" />
+        <item itemvalue="Application.k_sortArrayByParity" />
+        <item itemvalue="Application.l_evenDaysOfMonth" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd886049-7cf8-4c80-a06f-11dad49fcee9" name="Changes" comment="" />
+      <created>1724717469632</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724717469632</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/O_Patterns/O_Patterns.java</url>
+          <line>54</line>
+          <properties class="com.dsa_bootcamp_assignments.O_Patterns.O_Patterns" method="pattern5">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/O_Patterns/O_Patterns.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/O_Patterns/O_Patterns.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
