@@ -2,7 +2,7 @@ package com.dsa_bootcamp_assignments.O_Patterns;
 
 public class Main {
     public static void main(String[] args) {
-        pattern8(5);
+        pattern9(5);
     }
 
     static void pattern1(int n) {
@@ -92,6 +92,18 @@ public class Main {
                 System.out.print(" ");
             }
             for (int col = 0; col < 2 * row + 1; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern9(int n) {
+        for (int row = 0; row < n; row++) {
+            for (int i = 0; i < row; i++) {
+                System.out.print(" ");
+            }
+            for (int i = n * 2 - row * 2; i > 1; i--) {
                 System.out.print("*");
             }
             System.out.println();
