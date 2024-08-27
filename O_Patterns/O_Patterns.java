@@ -31,7 +31,7 @@ public class O_Patterns {
             System.out.println();
         }
     }
-//
+
 //    static void pattern4(int n) {
 //        for (int row = 0; row < n; row++) {
 //            int num = 0;
