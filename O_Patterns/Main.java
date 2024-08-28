@@ -2,7 +2,7 @@ package com.dsa_bootcamp_assignments.O_Patterns;
 
 public class Main {
     public static void main(String[] args) {
-        pattern12(5);
+        pattern30(5);
     }
 
     static void pattern1(int n) {
@@ -135,8 +135,8 @@ public class Main {
     }
 
     static void pattern12(int n) {
-        for (int row = 1; row <= n * 2 ; row++) {
-            int shade = row > n ? 2 * n - row : row -1;
+        for (int row = 1; row <= n * 2; row++) {
+            int shade = row > n ? 2 * n - row : row - 1;
             for (int col = 0; col < shade; col++) {
                 System.out.print(" ");
             }
@@ -147,6 +147,7 @@ public class Main {
             System.out.println();
         }
     }
+
 
     static void pattern28(int n) {
         for (int row = 0; row < (2 * n); row++) {
@@ -162,5 +163,20 @@ public class Main {
         }
     }
 
+
+    static void pattern30(int n) {
+        for (int row = 1; row <= n; row++) {
+            for (int shade = 0; shade < n - row; shade++) {
+                System.out.print("  ");
+            }
+            for (int col = row; col >= 1; col--) {
+                System.out.print(col + " ");
+            }
+            for (int col = 2; col <= row; col++) {
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+    }
 
 }
