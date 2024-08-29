@@ -2,7 +2,7 @@ package com.dsa_bootcamp_assignments.O_Patterns;
 
 public class Main {
     public static void main(String[] args) {
-        pattern31Concepts(4);
+        pattern31(4);
     }
 
     static void pattern1(int n) {
@@ -209,5 +209,15 @@ public class Main {
         }
     }
 
+    static void pattern31(int n) {
+        int N = 2 * n - 1;
+        for (int row = 0; row < N; row++) {
+            for (int col = 0; col < N; col++) {
+                int atEveryIndex = n - Math.min(Math.min(row, col), Math.min(N - row - 1, N - col - 1));
+                System.out.print(atEveryIndex + " ");
+            }
+            System.out.println();
+        }
+    }
 
 }
