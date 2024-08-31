@@ -5,9 +5,7 @@ import java.util.Arrays;
 public class a_BubbleSortAlgorithm {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 0};
-
         bubble(arr);
-
         System.out.println(Arrays.toString(arr));
     }
 
