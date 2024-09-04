@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class d_twoSum2 {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4, 4, 9, 56, 90};
-        int target = 8;
+        int[] nums = {5,25,75};
+        int target = 100;
 
         System.out.println(Arrays.toString(find(nums, target)));
     }
@@ -13,13 +13,24 @@ public class d_twoSum2 {
     static int[] find(int[] nums, int target) {
 
         for (int i = 0; i < nums.length; i++) {
-            for (int j = i+1; j < nums.length; j++) {
-                if (nums[i] + nums[j] == target) {
-                    return new int[]{i + 1, j + 1};
+            int bTarget = target - nums[i];
+
+            int start = i + 1;
+            int end = nums.length-1;
+            while (start <= end) {
+                int mid = start + (end - start) / 2;
+
+                if (nums[mid] > bTarget) {
+                    end = mid - 1;
+                } else if (nums[mid] < bTarget) {
+                    start = mid + 1;
+                }
+
+                if (nums[mid] == bTarget) {
+                    return new int[]{i, mid};
                 }
             }
         }
-
         return new int[]{-1, -1};
     }
 }
