@@ -2,7 +2,7 @@ package com.dsa_bootcamp_assignments.i_searching_medium;
 
 public class e_FindPeakElement {
     public static void main(String[] args) {
-        int[] nums = {1,2,3,1};
+        int[] nums = {1, 2, 3, 1};
         int res = bS(nums);
         System.out.println(res);
     }
