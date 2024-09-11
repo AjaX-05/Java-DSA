@@ -2,7 +2,7 @@ package com.dsa_bootcamp_assignments.O_Patterns;
 
 public class Main {
     public static void main(String[] args) {
-        pattern3(4);
+        pattern3(100);
     }
 
     static void pattern1(int n) {
