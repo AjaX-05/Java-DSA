@@ -1,13 +1,13 @@
-package com.dsa_bootcamp_assignments.m_sorting_EasyMed;
+package com.dsa_bootcamp_assignments.m_sorting_Easy;
 
 import java.util.Arrays;
 
-public class g_3rdMaximumNumber {
+public class k_sortArrayByParity {
     public static void main(String[] args) {
-        int[] nums = {3,2,1};
+        int[] nums = {3,1,2,4};
         bubble(nums);
+        parity(nums);
         System.out.println(Arrays.toString(nums));
-        System.out.println(thirdMax(nums));
     }
 
     static void bubble(int[] arr) {
@@ -27,7 +27,6 @@ public class g_3rdMaximumNumber {
                     swapped = true;
                 }
             }
-
 //            if you did not swap for a particular value of i, it means the array is sorted hence stop the program.
             if (!swapped) {
                 break;
@@ -35,20 +34,20 @@ public class g_3rdMaximumNumber {
         }
     }
 
-    static int thirdMax(int[] nums) {
-        int counter = 0;
-        int num = nums[nums.length - 1];
-        for (int i = nums.length - 2; i >= 0; i--) {
-            if (nums[i] < num) {
-                counter++;
-                num = nums[i];
-                if (counter == 2) {
-                    return num;
+    static void parity(int[] nums) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] % 2 != 0) {
+                    if (nums[j] % 2 == 0) {
+                        int temp = nums[j];
+                        nums[j] = nums[i];
+                        nums[i] = temp;
+                        break;
+                    }
                 }
 
             }
         }
-
-        return nums[nums.length - 1];
     }
+
 }

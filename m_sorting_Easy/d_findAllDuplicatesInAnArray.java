@@ -1,15 +1,17 @@
-package com.dsa_bootcamp_assignments.m_sorting_EasyMed;
+package com.dsa_bootcamp_assignments.m_sorting_Easy;
 
-import java.util.Arrays;
+import java.util.*;
 
-public class e_setMismatch {
+public class d_findAllDuplicatesInAnArray {
+
     public static void main(String[] args) {
-        int[] nums = {1, 1};
-        int[] mismatch = sort(nums);
-        System.out.println(Arrays.toString(mismatch));
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+
+        ArrayList<Integer> duplicatesList = sort(nums);
+        System.out.println(duplicatesList);
     }
 
-    static int[] sort(int[] nums) {
+    static ArrayList<Integer> sort(int[] nums) {
         int i = 0;
         while (i < nums.length) {
             int correctIndex = nums[i] - 1;
@@ -20,12 +22,15 @@ public class e_setMismatch {
             }
         }
 
+        ArrayList<Integer> duplicatesList = new ArrayList<>();
         for (int j = 0; j < nums.length; j++) {
             if (nums[j] != j + 1) {
-                return new int[]{nums[j], j + 1};
+//                System.out.println(j + 1);
+                duplicatesList.add(nums[j]);
             }
         }
-        return new int[]{-1, -1};
+
+        return duplicatesList;
     }
 
     static void swap(int[] nums, int first, int second) {

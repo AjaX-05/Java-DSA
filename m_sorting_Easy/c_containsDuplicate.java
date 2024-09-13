@@ -1,4 +1,4 @@
-package com.dsa_bootcamp_assignments.m_sorting_EasyMed;
+package com.dsa_bootcamp_assignments.m_sorting_Easy;
 
 public class c_containsDuplicate {
     // TIME LIMIT EXCEEDED ERROR
