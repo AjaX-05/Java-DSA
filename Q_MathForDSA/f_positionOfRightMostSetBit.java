@@ -9,7 +9,7 @@ public class f_positionOfRightMostSetBit {
 
     static int rmSetb(int n) {
         int isolatedBit = n & -n;
-
+        System.out.println(isolatedBit);
         int position = (int) (Math.log(isolatedBit)/Math.log(2) +1);
         return position;
     }

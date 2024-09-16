@@ -6,9 +6,9 @@ public class d_setTheiThBit {
         int i = 4;
         int res = (ans(num, i));
         System.out.println((res));
-  }
+    }
 
     static int ans(int num, int i) {
-        return 1 << (i - 1) | num;
-         }
+        return num | 1 << (i - 1);
+    }
 }

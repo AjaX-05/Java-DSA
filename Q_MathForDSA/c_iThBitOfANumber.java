@@ -11,7 +11,7 @@ public class c_iThBitOfANumber {
 
     static int ans(int num, int i) {
         int mask = 1 << (i - 1);
-        System.out.println(mask);
+//        System.out.println(mask);
         int bit = (num & mask) >> (i-1);
         System.out.println(bit);
        return num;
