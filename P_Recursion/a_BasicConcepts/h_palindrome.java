@@ -1,4 +1,4 @@
-package com.dsa_bootcamp_assignments.P_Recursion;
+package com.dsa_bootcamp_assignments.P_Recursion.a_BasicConcepts;
 
 public class h_palindrome {
     public static void main(String[] args) {

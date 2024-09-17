@@ -1,4 +1,4 @@
-package com.dsa_bootcamp_assignments.P_Recursion;
+package com.dsa_bootcamp_assignments.P_Recursion.a_BasicConcepts;
 
 public class d_Fibo {
     public static void main(String[] args) {
