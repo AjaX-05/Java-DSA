@@ -3,7 +3,7 @@ package com.dsa_bootcamp_assignments.P_Recursion.e_Strings;
 import java.util.ArrayList;
 import java.util.List;
 
-public class e_isSubSequence_iteration {
+public class f_isSubSequence_iteration {
     public static void main(String[] args) {
         String s = "abdgc";
         List<StringBuilder> tArr = subseq("ahbgdc");
