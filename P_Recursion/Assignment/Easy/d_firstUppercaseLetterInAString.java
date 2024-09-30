@@ -2,7 +2,7 @@ package com.dsa_bootcamp_assignments.P_Recursion.Assignment.Easy;
 
 public class d_firstUppercaseLetterInAString {
     public static void main(String[] args) {
-        String word = "gMeeksforgeeKs";
+        String word = "AbBdC";
         int n = word.length();
 //        char ch;
 //        for (int i = 0; i < word.length(); i++) {
@@ -14,7 +14,7 @@ public class d_firstUppercaseLetterInAString {
     }
 
     static char find(String word, int n, char ch) {
-        if (n == 0) {
+        if (n < 0) {
             return ch;
         }
         if (Character.isUpperCase(word.charAt(n))) {
