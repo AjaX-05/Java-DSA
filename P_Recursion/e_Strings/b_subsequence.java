@@ -5,12 +5,10 @@ import java.util.ArrayList;
 public class b_subsequence {
 
     public static void main(String[] args) {
-        subseq("", "abc");
+//        subseq("", "abc");
 //        ArrayList<String> res = new ArrayList<>();
-//        System.out.println((subseqRet("", "abc")));
+        System.out.println((subseqRet("", "abc")));
 //        System.out.println(res);
-
-
 
     }
 
@@ -23,9 +21,9 @@ public class b_subsequence {
         char ch = up.charAt(0);
 
         ArrayList<String> left = subseqRet(p + ch, up.substring(1));
-        System.out.println(left);
+//        System.out.println(left);
         ArrayList<String> right = subseqRet(p, up.substring(1));
-        System.out.println(right);
+//        System.out.println(right);
 
         left.addAll(right);
         return left;

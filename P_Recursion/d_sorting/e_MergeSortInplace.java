@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class e_MergeSortInplace {
     public static void main(String[] args) {
-        int[] nums = {5 , 3 , 1 ,2 ,0};
+        int[] nums = {5,2,3,1};
         mergeSortIP(nums, 0, nums.length);
         System.out.println(Arrays.toString(nums));
 
