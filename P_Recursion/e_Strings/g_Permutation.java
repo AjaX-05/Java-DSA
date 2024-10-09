@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class g_Permutation {
     public static void main(String[] args) {
-        System.out.println(permutationList("", "123"));
+        System.out.println(permCount("", "123"));
     }
 
     static void permutation(String p, String up) {
@@ -42,5 +42,24 @@ public class g_Permutation {
         }
 
         return ans;
+    }
+
+
+    static int permCount(String p, String up) {
+        if (up.isEmpty()) {
+            return 1;
+        }
+
+        int count = 0;
+        char ch = up.charAt(0);
+
+        for (int i = 0; i < up.length(); i++) {
+            String f = up.substring(0, i);
+            String s = up.substring(i, up.length());
+
+            count = count + permCount(f + ch + p, up.substring(1));
+        }
+
+        return count;
     }
 }
