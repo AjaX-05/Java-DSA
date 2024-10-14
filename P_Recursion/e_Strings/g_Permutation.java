@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class g_Permutation {
     public static void main(String[] args) {
-        System.out.println(permCount("", "123"));
+        permutation("", "123");
     }
 
     static void permutation(String p, String up) {
