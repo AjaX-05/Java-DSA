@@ -4,59 +4,56 @@ import java.util.ArrayList;
 
 public class c_MazeObstacales {
     public static void main(String[] args) {
-//        System.out.println(maze("", 0, 0));
-
-        boolean[][] board = {
+        boolean[][] maze = {
                 {true, true, true},
-                {true, false, false},
-                {true, true, true},
+                {true, false, true},
                 {true, true, true}
         };
-        System.out.println(maze2("", board, 0, 0));
 
+//        pathRestriction("", maze, 0, 0);
+        System.out.println(pathRestrictionRet("", maze, 0, 0));
     }
 
-    static ArrayList<String> maze2(String p, boolean[][] maze, int r, int c) {
+    static void pathRestriction(String p, boolean[][] maze, int r, int c) {
         if (r == maze.length - 1 && c == maze[0].length - 1) {
-            ArrayList<String> internal = new ArrayList<>();
-            internal.add(p);
-            return internal;
+            System.out.println(p);
+            return;
         }
 
         if (!maze[r][c]) {
-            return new ArrayList<>();
+            return;
         }
-
-        ArrayList<String> outer = new ArrayList<>();
 
         if (r < maze.length - 1) {
-            outer.addAll(maze2(p + 'V', maze, r + 1, c));
-        }
-        if (c < maze[0].length - 1) {
-            outer.addAll(maze2(p + 'H', maze, r, c + 1));
+            pathRestriction(p + 'D', maze, r + 1, c);
         }
 
-        return outer;
+        if (c < maze[0].length - 1) {
+            pathRestriction(p + 'R', maze, r, c + 1);
+        }
     }
 
-    static ArrayList<String> maze(String p, int r, int c) {
-        ArrayList<String> outer = new ArrayList<>();
-        if (r == 1 && c == 1) {
-            ArrayList<String> internal = new ArrayList<>();
-            return internal;
-        }
-        if (r == 2 && c == 2) {
-            ArrayList<String> internal = new ArrayList<>();
-            internal.add(p);
-            return internal;
+    static ArrayList<String> pathRestrictionRet(String p, boolean[][] maze, int r, int c) {
+        if (r == maze.length - 1 && c == maze[0].length - 1) {
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
         }
 
-        if (r < 3) {
-            outer.addAll(maze(p + 'V', r + 1, c));
+        ArrayList<String> list = new ArrayList<>();
+
+        if (!maze[r][c]) {
+            return list;
         }
-        if (c < 3) {
-            outer.addAll(maze(p + 'H', r, c + 1));
+
+        if (r < maze.length - 1) {
+            list.addAll(pathRestrictionRet(p + 'D', maze, r + 1, c));
         }
-        return outer;
+
+        if (c < maze[0].length - 1) {
+            list.addAll(pathRestrictionRet(p + 'R', maze, r, c + 1));
+        }
+
+        return list;
     }
 }

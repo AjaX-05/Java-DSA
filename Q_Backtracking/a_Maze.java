@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class a_Maze {
     public static void main(String[] args) {
-//        System.out.println(maze(2, 2));
+        System.out.println(maze(3, 3));
 //        mazePath("", 3, 3);
-        System.out.println(mazePathRet("", 3, 3));
+//        System.out.println(mazePathRet("", 3, 3));
     }
 
 

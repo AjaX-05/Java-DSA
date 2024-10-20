@@ -1,34 +1,32 @@
 package com.dsa_bootcamp_assignments.P_Recursion.Medium;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class a_CombinationSum {
     public static void main(String[] args) {
-        int[] nums = {2, 3, 6, 7};
+        int[] candidates = {2, 3, 6, 7};
         int target = 7;
-        List<List<Integer>> outer = new ArrayList<>();
-        combinations(nums, target, 0, 0, new ArrayList<>(), outer);
-        System.out.println(outer);
+        ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
+        comb(candidates, target, 0, 0, arr, new ArrayList<Integer>());
+        System.out.println(arr);
     }
 
-    static void combinations(int[] nums, int t, int sum, int idX, ArrayList<Integer> inner, List<List<Integer>> outer) {
-        if (sum == t) {
-            outer.add(new ArrayList<>(inner));
+    public static void comb(int[] candidates, int target, int sum, int i, ArrayList<ArrayList<Integer>> big, ArrayList<Integer> small) {
+        if (sum == target) {
+            big.add(new ArrayList<>(small));
             return;
         }
 
-        if (sum > t) {
+        if (sum > target) {
             return;
         }
 
-        for (int i = idX; i < nums.length; i++) {
-            inner.add(nums[i]);
-            System.out.println(inner);
-            combinations(nums, t, sum + nums[i], i, inner, outer);
-            inner.remove(inner.size() - 1);
+        for (int j = i; j < candidates.length; j++) {
+            small.add(candidates[j]);
+//            System.out.println(small);
+            comb(candidates, target, sum + candidates[j], j , big, small);
+            small.remove(small.size() - 1);
         }
-
     }
-
 }
