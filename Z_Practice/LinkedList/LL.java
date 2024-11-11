@@ -117,21 +117,51 @@ public class LL {
             this.val = val;
             this.next = next;
         }
+
+        public Node() {
+
+        }
     }
 
     //    Questions
-//    Recursive Insertion
-    public Node insertRec(int val, int index, Node next) {
+    //    Recursive Insertion
+    public Node insertRec(int val, int index, Node node) {
         if (index == 0) {
-//            Node node = new Node(val);
-//            node.next = next;
-            Node node = new Node(val, next);
+            Node temp = new Node(val, node);
             size++;
-            return node;
+            return temp;
+        }
+        node.next = insertRec(val, index - 1, node.next);
+        return node;
+    }
+
+    public Node deleteRec(int index, Node node) {
+        if (index == 1 && node.next.next == null) {
+            Node temp = new Node(node.val);
+            size--;
+            return temp;
+        }
+        if (index == 0) {
+            Node temp = new Node(node.next.val, node.next.next);
+            size--;
+            return temp;
         }
 
-        next.next = insertRec(val, index - 1, next.next);
-        return next;
+        node.next = deleteRec(index - 1, node.next);
+        return node;
+    }
+
+    public Node reverseList(Node head) {
+        Node tail = null;
+
+        while (head != null) {
+            Node temp = new Node();
+            temp.val = head.val;
+            temp.next = tail;
+            tail = temp;
+            head = head.next;
+        }
+        return tail;
     }
 
     //    Main
@@ -139,24 +169,34 @@ public class LL {
         LL list = new LL();
         list.display();
 
-        list.insert(0, 0);
-        list.insert(1, 2);
-        list.insert(2, 3);
-        list.insert(1, 10);
-        list.insert(0, 10);
+//        list.insert(0, 0);
+//        list.insert(1, 2);
+//        list.insert(2, 3);
+//        list.insert(1, 10);
+//        list.insert(0, 10);
 
 //        list.deleteLast();
 //        list.deleteLast();
 
 //        list.deleteFirst();
 //        list.deleteFirst();
+//
+//        list.delete(0);
+//        list.delete(1);
+//        list.delete(2);
 
-        list.delete(0);
-        list.delete(1);
-        list.delete(2);
+        list.insertFirst(5);
+        list.insertFirst(4);
+        list.insertFirst(3);
+        list.insertFirst(2);
+        list.insertFirst(1);
         list.display();
 
-        list.insertRec(6, 0, list.head);
+//        list.head = list.insertRec(6, 1, list.head);
+//        list.display();
+
+//        list.head = list.deleteRec(4, list.head);
+        list.head = list.reverseList(list.head);
         list.display();
     }
 }
