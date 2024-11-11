@@ -57,6 +57,7 @@ public class LL {
     public void insertRec(int val, int index) {
         head = insertRec(val, index, head);
     }
+
     private Node insertRec(int val, int index, Node node) {
         if (index == 0) {
             Node temp = new Node(val, node);
@@ -64,7 +65,7 @@ public class LL {
             return temp;
         }
 
-        node.next = insertRec(val, index-1, node.next);
+        node.next = insertRec(val, index - 1, node.next);
         return node;
     }
 
@@ -196,33 +197,65 @@ public class LL {
         return ans;
     }
 
+//    Happy Number
 
+    public boolean isHappy(int n) {
+        int slow = n;
+        int fast = n;
 
-    public static void main(String[] args) {
-        LL first = new LL();
-        LL second = new LL();
+        do {
+            slow = findSquare(slow);
+            fast = findSquare(findSquare(fast));
+        } while (slow != fast);
 
-        first.insertLast(1);
-        first.insertLast(3);
-        first.insertLast(5);
-
-        second.insertLast(1);
-        second.insertLast(2);
-        second.insertLast(9);
-        second.insertLast(14);
-
-        LL ans = LL.merge(first, second);
-        ans.display();
-
-        LL list = new LL();
-        for (int i = 7; i > 0; i--) {
-            list.insertLast(i);
+        if (slow == 1) {
+            return true;
         }
-        list.display();
-        list.display();
-
+        return false;
     }
 
+    private int findSquare(int number) {
+        int ans = 0;
+        while (number > 0) {
+            int rem = number % 10;
+            ans += rem * rem;
+            number /= 10;
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+//        LL first = new LL();
+//        LL second = new LL();
+//
+//        first.insertLast(1);
+//        first.insertLast(3);
+//        first.insertLast(5);
+//
+//        second.insertLast(1);
+//        second.insertLast(2);
+//        second.insertLast(9);
+//        second.insertLast(14);
+//
+//        LL ans = LL.merge(first, second);
+//        ans.display();
+//
+        LL list = new LL();
+//        for (int i = 7; i > 0; i--) {
+//            list.insertLast(i);
+//        }
+//        list.display();
+//        list.display();
+
+        list.insertFirst(3);
+        list.insertFirst(1);
+        list.insertFirst(2);
+        list.insertFirst(4);
+
+        list.display();
+
+
+    }
 
 
 }
